@@ -15,9 +15,6 @@
             <i class="el-icon-s-platform"></i>
           </el-menu-item>
           <el-menu-item index="1">处理中心</el-menu-item>
-          <el-menu-item index="2">
-            <template slot="title">我的工作台</template>
-          </el-menu-item>
           <el-menu-item index="4"></el-menu-item>
         </el-menu>
       </el-header>
@@ -31,23 +28,9 @@
             text-color="#fff"
             active-text-color="#ffd04b"
           >
-            <el-menu-item index="1">
-              <template slot="title">
-                <i class="el-icon-menu"></i>
-                <span>窗户计算</span>
-              </template>
-            </el-menu-item>
             <el-menu-item index="2">
               <i class="el-icon-menu"></i>
-              <span slot="title">材料管理</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <i class="el-icon-document"></i>
-              <span slot="title">仓库管理</span>
-            </el-menu-item>
-            <el-menu-item index="4">
-              <i class="el-icon-setting"></i>
-              <span slot="title">财务管理</span>
+              <span slot="title">测试</span>
             </el-menu-item>
           </el-menu>
         </el-aside>
@@ -73,12 +56,10 @@ export default {
     },
     handleOpen(key, keyPath) {
       console.log(key, keyPath);
-      if (keyPath[0] == "1") {
+      if (keyPath[0] == "2") {
         this.$router.push({ name: "lv" });
-      }else {
-          if (keyPath[0] == "2"){
-              this.$router.push({name: "222"});
-          }
+      } else {
+        
       }
     }
   }

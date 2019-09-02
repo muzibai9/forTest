@@ -13,10 +13,6 @@ export default new Router({
         path: '/lv',
         name: 'lv',
         component: () => import('../views/lv'),
-      },{
-        path: '/222',
-        name: '222',
-        compoennt: () => import('../views/2222'),
       }]
     },
   ]
